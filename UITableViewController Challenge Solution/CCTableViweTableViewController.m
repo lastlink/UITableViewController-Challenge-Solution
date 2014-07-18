@@ -76,14 +76,20 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: CellIdentifier
  forIndexPath:indexPath];
     if (indexPath.section==0) {
-        
+        //cell.backgroundColor=[UIColor redColor];
+
+        cell.backgroundColor=[UIColor redColor];
         cell.textLabel.text=[NSString stringWithFormat:@"I am in section 0"];
     }
     else if (indexPath.section==1){
+        cell.backgroundColor=[UIColor blueColor];
+
         cell.textLabel.text=[NSString stringWithFormat:@"another section"];
     }
     else if (indexPath.section==2)
     {
+        cell.backgroundColor=[UIColor yellowColor];
+
         cell.textLabel.text=[NSString stringWithFormat:@"cell %i",indexPath.row];
     }
 
